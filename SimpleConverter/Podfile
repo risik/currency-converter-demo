@@ -1,0 +1,12 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+
+target 'SimpleConverter' do
+pod 'AFNetworking', '~> 2.5'
+pod 'Reachability', '~> 3.2'
+end
+
+target 'SimpleConverterTests' do
+
+end
+
