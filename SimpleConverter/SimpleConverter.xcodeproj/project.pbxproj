@@ -16,16 +16,17 @@
 		677EFA13BF95B81EE2C730CB /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF80BD0E38A6CDD560887 /* NSString+Utils.m */; };
 		677EFA6E5F86C6185051270F /* SBArrayUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF573D7C567765FF25572 /* SBArrayUtilsTests.m */; };
 		677EFA87BFEC991391D9F8F5 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF4582FCF56B70A5B083C /* NSObject+Utils.m */; };
+		677EFC28C9D88ED58B3E5298 /* SimpleConverter.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 677EFABE34B6DF0F394D582D /* SimpleConverter.xcdatamodel */; };
 		677EFCA6F3B0765BE45A798C /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFE6EF13C1E321F9044F0 /* NSArray+Utils.m */; };
 		677EFD1A78CF0A444A18645A /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF9BE7F57933D77844824 /* NSString+MD5.m */; };
 		677EFF1A67E64A900001236F /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF003E810306F279879CE /* NSDictionary+Utils.m */; };
 		FC6DEF5E1A93BC5D00A86CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DEF5D1A93BC5D00A86CA8 /* main.m */; };
 		FC6DEF611A93BC5D00A86CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DEF601A93BC5D00A86CA8 /* AppDelegate.m */; };
-		FC6DEF641A93BC5D00A86CA8 /* SimpleConverter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC6DEF621A93BC5D00A86CA8 /* SimpleConverter.xcdatamodeld */; };
 		FC6DEF671A93BC5D00A86CA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DEF661A93BC5D00A86CA8 /* ViewController.m */; };
 		FC6DEF6A1A93BC5D00A86CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6DEF681A93BC5D00A86CA8 /* Main.storyboard */; };
 		FC6DEF6C1A93BC5D00A86CA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6DEF6B1A93BC5D00A86CA8 /* Images.xcassets */; };
 		FC6DEF6F1A93BC5D00A86CA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6DEF6D1A93BC5D00A86CA8 /* LaunchScreen.xib */; };
+		FC7750E21A94E0CD00542A72 /* SBRate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7750E11A94E0CD00542A72 /* SBRate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		677EF94C1353FE8EA987E388 /* SBObjectUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBObjectUtilsTests.m; sourceTree = "<group>"; };
 		677EF9A658A8D3D9A083F398 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
 		677EF9BE7F57933D77844824 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		677EFABE34B6DF0F394D582D /* SimpleConverter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleConverter.xcdatamodel; sourceTree = "<group>"; };
 		677EFAC6566D4543B89D1CF4 /* SBStringUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStringUtilsTests.m; sourceTree = "<group>"; };
 		677EFB7425FECFB3576A0AEC /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
 		677EFE6EF13C1E321F9044F0 /* NSArray+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utils.m"; sourceTree = "<group>"; };
@@ -64,7 +66,6 @@
 		FC6DEF5D1A93BC5D00A86CA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC6DEF5F1A93BC5D00A86CA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC6DEF601A93BC5D00A86CA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC6DEF631A93BC5D00A86CA8 /* SimpleConverter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleConverter.xcdatamodel; sourceTree = "<group>"; };
 		FC6DEF651A93BC5D00A86CA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FC6DEF661A93BC5D00A86CA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FC6DEF691A93BC5D00A86CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +73,8 @@
 		FC6DEF6E1A93BC5D00A86CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FC6DEF741A93BC5E00A86CA8 /* SimpleConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6DEF791A93BC5E00A86CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7750E01A94E0CD00542A72 /* SBRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRate.h; sourceTree = "<group>"; };
+		FC7750E11A94E0CD00542A72 /* SBRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,16 @@
 				F497B73A0BA78EB1D8D47F50 /* libPods-SimpleConverter.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		677EFAE85B7FA7CF74BAA2F3 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				677EFABE34B6DF0F394D582D /* SimpleConverter.xcdatamodel */,
+				FC7750E01A94E0CD00542A72 /* SBRate.h */,
+				FC7750E11A94E0CD00542A72 /* SBRate.m */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		677EFC7A3CFFDC9B7C5F12F9 /* Utils */ = {
@@ -171,9 +184,9 @@
 				FC6DEF681A93BC5D00A86CA8 /* Main.storyboard */,
 				FC6DEF6B1A93BC5D00A86CA8 /* Images.xcassets */,
 				FC6DEF6D1A93BC5D00A86CA8 /* LaunchScreen.xib */,
-				FC6DEF621A93BC5D00A86CA8 /* SimpleConverter.xcdatamodeld */,
 				FC6DEF5B1A93BC5D00A86CA8 /* Supporting Files */,
 				677EFC7A3CFFDC9B7C5F12F9 /* Utils */,
+				677EFAE85B7FA7CF74BAA2F3 /* DataModel */,
 			);
 			path = SimpleConverter;
 			sourceTree = "<group>";
@@ -273,8 +286,6 @@
 			mainGroup = FC6DEF4F1A93BC5D00A86CA8;
 			productRefGroup = FC6DEF591A93BC5D00A86CA8 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				FC6DEF571A93BC5D00A86CA8 /* SimpleConverter */,
@@ -342,15 +353,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC6DEF611A93BC5D00A86CA8 /* AppDelegate.m in Sources */,
+				FC7750E21A94E0CD00542A72 /* SBRate.m in Sources */,
 				FC6DEF5E1A93BC5D00A86CA8 /* main.m in Sources */,
 				FC6DEF671A93BC5D00A86CA8 /* ViewController.m in Sources */,
-				FC6DEF641A93BC5D00A86CA8 /* SimpleConverter.xcdatamodeld in Sources */,
 				677EFD1A78CF0A444A18645A /* NSString+MD5.m in Sources */,
 				677EFCA6F3B0765BE45A798C /* NSArray+Utils.m in Sources */,
 				677EF340996F44E1504EE3E8 /* NSNumber+Utils.m in Sources */,
 				677EFA87BFEC991391D9F8F5 /* NSObject+Utils.m in Sources */,
 				677EFA13BF95B81EE2C730CB /* NSString+Utils.m in Sources */,
 				677EFF1A67E64A900001236F /* NSDictionary+Utils.m in Sources */,
+				677EFC28C9D88ED58B3E5298 /* SimpleConverter.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +559,7 @@
 				FC6DEF801A93BC5E00A86CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC6DEF811A93BC5E00A86CA8 /* Build configuration list for PBXNativeTarget "SimpleConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -555,21 +568,9 @@
 				FC6DEF831A93BC5E00A86CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FC6DEF621A93BC5D00A86CA8 /* SimpleConverter.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FC6DEF631A93BC5D00A86CA8 /* SimpleConverter.xcdatamodel */,
-			);
-			currentVersion = FC6DEF631A93BC5D00A86CA8 /* SimpleConverter.xcdatamodel */;
-			path = SimpleConverter.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FC6DEF501A93BC5D00A86CA8 /* Project object */;
 }
