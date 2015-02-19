@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1991EA996B9E85E355540B59 /* libPods-SimpleConverter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F497B73A0BA78EB1D8D47F50 /* libPods-SimpleConverter.a */; };
+		677EF01C2B959C9ECD645210 /* SBCurrencyRateSaverMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFB9807A404C080145A06 /* SBCurrencyRateSaverMock.m */; };
 		677EF1113C73AAE83D96033D /* SBNumberUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF480220DABE08BC0472C /* SBNumberUtilsTests.m */; };
 		677EF340996F44E1504EE3E8 /* NSNumber+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFF6521647E343C740E3F /* NSNumber+Utils.m */; };
 		677EF8607FE5D4DB401AEE20 /* NSManagedObjectContext+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFA752EF58617A90BF6F4 /* NSManagedObjectContext+Testing.m */; };
 		677EF8B2DE39D0ECE0E8C00D /* SBStringUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFAC6566D4543B89D1CF4 /* SBStringUtilsTests.m */; };
 		677EF8E4F96504DCA522C615 /* SBDictionaryUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF8467B8615F4C17FAD45 /* SBDictionaryUtilsTests.m */; };
+		677EF93518B6A55E2E1D5411 /* SBDataSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF69746EC39166153A5AC /* SBDataSaver.m */; };
 		677EF9BF3FE835EDDA51DB55 /* SBObjectUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF94C1353FE8EA987E388 /* SBObjectUtilsTests.m */; };
 		677EFA13BF95B81EE2C730CB /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF80BD0E38A6CDD560887 /* NSString+Utils.m */; };
 		677EFA6E5F86C6185051270F /* SBArrayUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF573D7C567765FF25572 /* SBArrayUtilsTests.m */; };
@@ -30,6 +32,7 @@
 		FC6DEF6F1A93BC5D00A86CA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6DEF6D1A93BC5D00A86CA8 /* LaunchScreen.xib */; };
 		FC7750E21A94E0CD00542A72 /* SBRate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7750E11A94E0CD00542A72 /* SBRate.m */; };
 		FC7750E41A94EED900542A72 /* SBCurrencyRateSaverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7750E31A94EED900542A72 /* SBCurrencyRateSaverTests.m */; };
+		FCFFD9271A9674AF00098A2A /* SBDataSaverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFFD9261A9674AF00098A2A /* SBDataSaverTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 /* Begin PBXFileReference section */
 		150B7B1D2765C1711DA33D28 /* Pods-SimpleConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleConverter/Pods-SimpleConverter.debug.xcconfig"; sourceTree = "<group>"; };
 		677EF003E810306F279879CE /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		677EF19FDF285BEC9B8BDC12 /* SBDataSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDataSaver.h; sourceTree = "<group>"; };
+		677EF1D7BADB812BDD757F30 /* SBCurrencyRateSaverMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCurrencyRateSaverMock.h; sourceTree = "<group>"; };
 		677EF30E1EC024EDCD1BCBDB /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		677EF37F8C0BB7A933D235B4 /* SBCurrencyRateSaverProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCurrencyRateSaverProtocol.h; sourceTree = "<group>"; };
 		677EF4582FCF56B70A5B083C /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		677EF4E8F66D7A141FF7C4B0 /* SBCurrencyRateSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCurrencyRateSaver.m; sourceTree = "<group>"; };
 		677EF4F973DDBDFC4B4EC449 /* NSArray+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utils.h"; sourceTree = "<group>"; };
 		677EF573D7C567765FF25572 /* SBArrayUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBArrayUtilsTests.m; sourceTree = "<group>"; };
+		677EF69746EC39166153A5AC /* SBDataSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDataSaver.m; sourceTree = "<group>"; };
 		677EF6C922FA7CE47FCA0630 /* SBCurrencyRateSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCurrencyRateSaver.h; sourceTree = "<group>"; };
 		677EF80BD0E38A6CDD560887 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
 		677EF8375E23F040EF2C4842 /* NSNumber+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Utils.h"; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 		677EFABE34B6DF0F394D582D /* SimpleConverter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleConverter.xcdatamodel; sourceTree = "<group>"; };
 		677EFAC6566D4543B89D1CF4 /* SBStringUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStringUtilsTests.m; sourceTree = "<group>"; };
 		677EFB7425FECFB3576A0AEC /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
+		677EFB9807A404C080145A06 /* SBCurrencyRateSaverMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCurrencyRateSaverMock.m; sourceTree = "<group>"; };
+		677EFC3BE2A042AC432B4A3D /* SBDataSaverProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDataSaverProtocol.h; sourceTree = "<group>"; };
 		677EFD7FAFE2D29E7E2A82E2 /* NSManagedObjectContext+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Testing.h"; sourceTree = "<group>"; };
 		677EFE6EF13C1E321F9044F0 /* NSArray+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utils.m"; sourceTree = "<group>"; };
 		677EFF6521647E343C740E3F /* NSNumber+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Utils.m"; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 		FC7750E01A94E0CD00542A72 /* SBRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRate.h; sourceTree = "<group>"; };
 		FC7750E11A94E0CD00542A72 /* SBRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRate.m; sourceTree = "<group>"; };
 		FC7750E31A94EED900542A72 /* SBCurrencyRateSaverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCurrencyRateSaverTests.m; sourceTree = "<group>"; };
+		FCFFD9261A9674AF00098A2A /* SBDataSaverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDataSaverTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +128,9 @@
 				677EF6C922FA7CE47FCA0630 /* SBCurrencyRateSaver.h */,
 				677EF4E8F66D7A141FF7C4B0 /* SBCurrencyRateSaver.m */,
 				677EF37F8C0BB7A933D235B4 /* SBCurrencyRateSaverProtocol.h */,
+				677EFC3BE2A042AC432B4A3D /* SBDataSaverProtocol.h */,
+				677EF69746EC39166153A5AC /* SBDataSaver.m */,
+				677EF19FDF285BEC9B8BDC12 /* SBDataSaver.h */,
 			);
 			path = DataSave;
 			sourceTree = "<group>";
@@ -173,10 +185,21 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		677EFF67020EF88E9EE89713 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				677EFB9807A404C080145A06 /* SBCurrencyRateSaverMock.m */,
+				677EF1D7BADB812BDD757F30 /* SBCurrencyRateSaverMock.h */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		677EFF8F2A25AB99379B6C21 /* DataSave */ = {
 			isa = PBXGroup;
 			children = (
 				FC7750E31A94EED900542A72 /* SBCurrencyRateSaverTests.m */,
+				677EFF67020EF88E9EE89713 /* Mock */,
+				FCFFD9261A9674AF00098A2A /* SBDataSaverTests.m */,
 			);
 			path = DataSave;
 			sourceTree = "<group>";
@@ -403,6 +426,7 @@
 				677EFF1A67E64A900001236F /* NSDictionary+Utils.m in Sources */,
 				677EFC28C9D88ED58B3E5298 /* SimpleConverter.xcdatamodel in Sources */,
 				677EFC7ED3BA98E4BEFBAD3F /* SBCurrencyRateSaver.m in Sources */,
+				677EF93518B6A55E2E1D5411 /* SBDataSaver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +438,11 @@
 				677EF1113C73AAE83D96033D /* SBNumberUtilsTests.m in Sources */,
 				677EF9BF3FE835EDDA51DB55 /* SBObjectUtilsTests.m in Sources */,
 				FC7750E41A94EED900542A72 /* SBCurrencyRateSaverTests.m in Sources */,
+				FCFFD9271A9674AF00098A2A /* SBDataSaverTests.m in Sources */,
 				677EF8B2DE39D0ECE0E8C00D /* SBStringUtilsTests.m in Sources */,
 				677EF8E4F96504DCA522C615 /* SBDictionaryUtilsTests.m in Sources */,
 				677EF8607FE5D4DB401AEE20 /* NSManagedObjectContext+Testing.m in Sources */,
+				677EF01C2B959C9ECD645210 /* SBCurrencyRateSaverMock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
