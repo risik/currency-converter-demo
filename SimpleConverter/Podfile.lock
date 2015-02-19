@@ -21,13 +21,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Reachability (3.2)
+  - TBStateMachine (3.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
   - Reachability (~> 3.2)
+  - TBStateMachine (~> 3.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
   Reachability: 1ef8adf5c4e3d362f96515d4278f68dad3c26930
+  TBStateMachine: 0c581067aa5a86e1f87321f2659d382d8b24d7a2
 
 COCOAPODS: 0.35.0

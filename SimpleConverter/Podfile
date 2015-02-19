@@ -4,6 +4,7 @@ platform :ios, '7.0'
 target 'SimpleConverter' do
 pod 'AFNetworking', '~> 2.5'
 pod 'Reachability', '~> 3.2'
+pod 'TBStateMachine', '~> 3.0'
 end
 
 target 'SimpleConverterTests' do
