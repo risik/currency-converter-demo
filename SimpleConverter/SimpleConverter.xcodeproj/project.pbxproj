@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1991EA996B9E85E355540B59 /* libPods-SimpleConverter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F497B73A0BA78EB1D8D47F50 /* libPods-SimpleConverter.a */; };
 		677EF01C2B959C9ECD645210 /* SBCurrencyRateSaverMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFB9807A404C080145A06 /* SBCurrencyRateSaverMock.m */; };
+		677EF0A9775DBB9EBDAC35CA /* SBCurrencyRateLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFF99FF0A25B040B18786 /* SBCurrencyRateLoader.m */; };
 		677EF1113C73AAE83D96033D /* SBNumberUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF480220DABE08BC0472C /* SBNumberUtilsTests.m */; };
 		677EF340996F44E1504EE3E8 /* NSNumber+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFF6521647E343C740E3F /* NSNumber+Utils.m */; };
 		677EF8607FE5D4DB401AEE20 /* NSManagedObjectContext+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFA752EF58617A90BF6F4 /* NSManagedObjectContext+Testing.m */; };
@@ -50,6 +51,7 @@
 		677EF003E810306F279879CE /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
 		677EF19FDF285BEC9B8BDC12 /* SBDataSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDataSaver.h; sourceTree = "<group>"; };
 		677EF1D7BADB812BDD757F30 /* SBCurrencyRateSaverMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCurrencyRateSaverMock.h; sourceTree = "<group>"; };
+		677EF2C773498D542DD4A9BC /* SBDataLoaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDataLoaderProtocol.h; sourceTree = "<group>"; };
 		677EF30E1EC024EDCD1BCBDB /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		677EF37F8C0BB7A933D235B4 /* SBCurrencyRateSaverProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCurrencyRateSaverProtocol.h; sourceTree = "<group>"; };
 		677EF4582FCF56B70A5B083C /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
@@ -57,6 +59,8 @@
 		677EF4E8F66D7A141FF7C4B0 /* SBCurrencyRateSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCurrencyRateSaver.m; sourceTree = "<group>"; };
 		677EF4F973DDBDFC4B4EC449 /* NSArray+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utils.h"; sourceTree = "<group>"; };
 		677EF573D7C567765FF25572 /* SBArrayUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBArrayUtilsTests.m; sourceTree = "<group>"; };
+		677EF5CC73D3DF2B305C2136 /* SBInternetStatusProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBInternetStatusProtocol.h; sourceTree = "<group>"; };
+		677EF61D4D47D213D8FFFBF9 /* SBDataLoaderFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDataLoaderFactoryProtocol.h; sourceTree = "<group>"; };
 		677EF69746EC39166153A5AC /* SBDataSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDataSaver.m; sourceTree = "<group>"; };
 		677EF6C922FA7CE47FCA0630 /* SBCurrencyRateSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCurrencyRateSaver.h; sourceTree = "<group>"; };
 		677EF80BD0E38A6CDD560887 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		677EF9A658A8D3D9A083F398 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
 		677EF9BE7F57933D77844824 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		677EFA752EF58617A90BF6F4 /* NSManagedObjectContext+Testing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Testing.m"; sourceTree = "<group>"; };
+		677EFAB6055422174762F4C8 /* SBCurrencyRateLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCurrencyRateLoader.h; sourceTree = "<group>"; };
 		677EFABE34B6DF0F394D582D /* SimpleConverter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleConverter.xcdatamodel; sourceTree = "<group>"; };
 		677EFAC6566D4543B89D1CF4 /* SBStringUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStringUtilsTests.m; sourceTree = "<group>"; };
 		677EFB7425FECFB3576A0AEC /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 		677EFE6EF13C1E321F9044F0 /* NSArray+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utils.m"; sourceTree = "<group>"; };
 		677EFF6521647E343C740E3F /* NSNumber+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Utils.m"; sourceTree = "<group>"; };
 		677EFF6D50B1FA8876888A51 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
+		677EFF99FF0A25B040B18786 /* SBCurrencyRateLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCurrencyRateLoader.m; sourceTree = "<group>"; };
 		D729590306408D77925F4CA0 /* Pods-SimpleConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleConverter/Pods-SimpleConverter.release.xcconfig"; sourceTree = "<group>"; };
 		F497B73A0BA78EB1D8D47F50 /* libPods-SimpleConverter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleConverter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6DEF581A93BC5D00A86CA8 /* SimpleConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +148,18 @@
 				677EFA752EF58617A90BF6F4 /* NSManagedObjectContext+Testing.m */,
 			);
 			path = TestUtils;
+			sourceTree = "<group>";
+		};
+		677EF789787EA298047AA64F /* DataLoader */ = {
+			isa = PBXGroup;
+			children = (
+				677EFAB6055422174762F4C8 /* SBCurrencyRateLoader.h */,
+				677EFF99FF0A25B040B18786 /* SBCurrencyRateLoader.m */,
+				677EF2C773498D542DD4A9BC /* SBDataLoaderProtocol.h */,
+				677EF61D4D47D213D8FFFBF9 /* SBDataLoaderFactoryProtocol.h */,
+				677EF5CC73D3DF2B305C2136 /* SBInternetStatusProtocol.h */,
+			);
+			path = DataLoader;
 			sourceTree = "<group>";
 		};
 		677EFAE85B7FA7CF74BAA2F3 /* DataModel */ = {
@@ -247,6 +265,7 @@
 				677EFC7A3CFFDC9B7C5F12F9 /* Utils */,
 				677EFAE85B7FA7CF74BAA2F3 /* DataModel */,
 				677EF2BF4C637EE22D14590A /* DataSave */,
+				677EF789787EA298047AA64F /* DataLoader */,
 			);
 			path = SimpleConverter;
 			sourceTree = "<group>";
@@ -427,6 +446,7 @@
 				677EFC28C9D88ED58B3E5298 /* SimpleConverter.xcdatamodel in Sources */,
 				677EFC7ED3BA98E4BEFBAD3F /* SBCurrencyRateSaver.m in Sources */,
 				677EF93518B6A55E2E1D5411 /* SBDataSaver.m in Sources */,
+				677EF0A9775DBB9EBDAC35CA /* SBCurrencyRateLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
