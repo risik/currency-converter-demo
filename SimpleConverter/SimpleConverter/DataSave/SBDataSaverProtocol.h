@@ -16,4 +16,6 @@ typedef enum {
               andRates:(NSData *)ratesData
                  error:(NSError **)pError;
 
+- (BOOL)hasData;
+
 @end

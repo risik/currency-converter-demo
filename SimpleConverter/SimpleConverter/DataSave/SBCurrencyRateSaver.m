@@ -82,6 +82,11 @@
     return YES;
 }
 
+- (BOOL)hasData
+{
+    return [self getAllRates].count > 0;
+}
+
 #pragma mark internal
 
 - (BOOL)checkValidityForCurrencies:(NSDictionary *)currenciesDictionary

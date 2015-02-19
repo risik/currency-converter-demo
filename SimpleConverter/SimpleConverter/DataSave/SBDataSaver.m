@@ -84,6 +84,12 @@
     return [self.currencyRateSaver saveCurrencies:currenciesDictionary andRates:internalRates error:pError];
 }
 
+- (BOOL)hasData
+{
+    return self.currencyRateSaver.hasData;
+}
+
+
 #pragma mark internal
 
 - (void)fillError:(NSError **)pError withErrorCode:(int)errorCode withUserInfo:(NSDictionary *)userInfo

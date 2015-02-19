@@ -19,4 +19,13 @@
     return NO;
 }
 
+- (BOOL)hasData
+{
+    if (self.hasDataBlock) {
+        return self.hasDataBlock();
+    }
+    return NO;
+}
+
+
 @end

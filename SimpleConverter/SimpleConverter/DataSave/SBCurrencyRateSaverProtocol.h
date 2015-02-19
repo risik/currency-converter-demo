@@ -11,4 +11,6 @@
               andRates:(NSDictionary *)ratesDictionary
                  error:(NSError **)pError;
 
+- (BOOL)hasData;
+
 @end

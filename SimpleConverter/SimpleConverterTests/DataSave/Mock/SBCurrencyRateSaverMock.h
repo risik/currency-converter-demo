@@ -12,4 +12,8 @@
 typedef BOOL (^SBCurrencyRateSaverMockSaveCurrenciesBlock)(NSDictionary *currenciesDictionary, NSDictionary *ratesDictionary, NSError **pError);
 @property (nonatomic, copy) SBCurrencyRateSaverMockSaveCurrenciesBlock saveCurrenciesBlock;
 
+
+typedef BOOL(^SBCurrencyRateSaverMockHasDataBlock)();
+@property (nonatomic, copy) SBCurrencyRateSaverMockHasDataBlock hasDataBlock;
+
 @end

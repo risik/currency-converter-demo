@@ -90,6 +90,27 @@
     XCTAssertNotNil(error, @"error: %@", error);
 }
 
+- (void)testHasDataNo
+{
+    self.currencyRateSaverMock.hasDataBlock = ^BOOL
+    {
+        return NO;
+    };
+
+    id <SBDataSaverProtocol> saver = [SBDataSaver saverWithCurrencyRateSaver:self.currencyRateSaverMock];
+    XCTAssertFalse(saver.hasData);
+}
+
+- (void)testHasDataYes
+{
+    self.currencyRateSaverMock.hasDataBlock = ^BOOL
+    {
+        return YES;
+    };
+
+    id <SBDataSaverProtocol> saver = [SBDataSaver saverWithCurrencyRateSaver:self.currencyRateSaverMock];
+    XCTAssertTrue(saver.hasData);
+}
 
 #pragma mark internal
 

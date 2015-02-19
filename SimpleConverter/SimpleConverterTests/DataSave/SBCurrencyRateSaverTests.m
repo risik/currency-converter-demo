@@ -70,6 +70,7 @@
     NSError *error = nil;
     XCTAssertFalse([saver saveCurrencies:nil andRates:self.rates1 error:&error]);
     XCTAssertNotNil(error);
+    XCTAssertFalse(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 0);
 }
@@ -81,6 +82,7 @@
     NSError *error = nil;
     XCTAssertFalse([saver saveCurrencies:(id) @"" andRates:self.rates1 error:&error]);
     XCTAssertNotNil(error);
+    XCTAssertFalse(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 0);
 }
@@ -92,6 +94,7 @@
     NSError *error = nil;
     XCTAssertFalse([saver saveCurrencies:@{} andRates:self.rates1 error:&error]);
     XCTAssertNotNil(error);
+    XCTAssertFalse(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 0);
 }
@@ -102,6 +105,7 @@
     NSError *error = nil;
     XCTAssertFalse([saver saveCurrencies:self.currencies1 andRates:nil error:&error]);
     XCTAssertNotNil(error);
+    XCTAssertFalse(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 0);
 }
@@ -113,6 +117,7 @@
     NSError *error = nil;
     XCTAssertFalse([saver saveCurrencies:self.currencies1 andRates:(id) @"" error:&error]);
     XCTAssertNotNil(error);
+    XCTAssertFalse(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 0);
 }
@@ -124,6 +129,7 @@
     NSError *error = nil;
     XCTAssertFalse([saver saveCurrencies:self.currencies1 andRates:@{} error:&error]);
     XCTAssertNotNil(error);
+    XCTAssertFalse(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 0);
 }
@@ -131,10 +137,12 @@
 - (void)testAddTwiceSame
 {
     id <SBCurrencyRateSaverProtocol> saver = [SBCurrencyRateSaver saverWithContext:self.context];
+    XCTAssertFalse(saver.hasData);
 
     NSError *error = nil;
     XCTAssertTrue([saver saveCurrencies:self.currencies1 andRates:self.rates1 error:&error], @"error: %@", error);
     XCTAssertNil(error);
+    XCTAssertTrue(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 3);
     XCTAssertTrue([[self getRateWithCode:@"AED"].name isEqualToString:@"United Arab Emirates Dirham"]);
@@ -146,6 +154,7 @@
 
     XCTAssertTrue([saver saveCurrencies:self.currencies1 andRates:self.rates1 error:&error]);
     XCTAssertNil(error);
+    XCTAssertTrue(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 3, @"records count: %d", [self getAllRates].count);
     XCTAssertTrue([[self getRateWithCode:@"AED"].name isEqualToString:@"United Arab Emirates Dirham"]);
@@ -159,10 +168,12 @@
 - (void)testAddTwiceDifferent
 {
     id <SBCurrencyRateSaverProtocol> saver = [SBCurrencyRateSaver saverWithContext:self.context];
+    XCTAssertFalse(saver.hasData);
 
     NSError *error = nil;
     XCTAssertTrue([saver saveCurrencies:self.currencies1 andRates:self.rates1 error:&error], @"error: %@", error);
     XCTAssertNil(error);
+    XCTAssertTrue(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 3);
     XCTAssertTrue([[self getRateWithCode:@"AED"].name isEqualToString:@"United Arab Emirates Dirham"]);
@@ -174,6 +185,7 @@
 
     XCTAssertTrue([saver saveCurrencies:self.currencies2 andRates:self.rates2 error:&error]);
     XCTAssertNil(error);
+    XCTAssertTrue(saver.hasData);
 
     XCTAssertTrue([self getAllRates].count == 3, @"records count: %d", [self getAllRates].count);
     XCTAssertTrue([[self getRateWithCode:@"AED"].name isEqualToString:@"United Arab Emirates Dirham2"]);
@@ -191,10 +203,12 @@
     NSError *error = nil;
     XCTAssertFalse([saver saveCurrencies:self.currencies1 andRates:self.rates3 error:&error]);
     XCTAssertNotNil(error);
+    XCTAssertFalse(saver.hasData);
 
     error = nil;
     XCTAssertFalse([saver saveCurrencies:self.currencies3 andRates:self.rates1 error:&error]);
     XCTAssertNotNil(error);
+    XCTAssertFalse(saver.hasData);
 }
 
 
