@@ -140,6 +140,9 @@
     XCTAssertTrue([[self getRateWithCode:@"AED"].name isEqualToString:@"United Arab Emirates Dirham"]);
     XCTAssertTrue([[self getRateWithCode:@"AFN"].name isEqualToString:@"Afghan Afghani"]);
     XCTAssertTrue([[self getRateWithCode:@"ALL"].name isEqualToString:@"Albanian Lek"]);
+    XCTAssertTrue([[self getRateWithCode:@"AED"].rate isEqualToNumber:@3.67343]);
+    XCTAssertTrue([[self getRateWithCode:@"AFN"].rate isEqualToNumber:@57.411375]);
+    XCTAssertTrue([[self getRateWithCode:@"ALL"].rate isEqualToNumber:@123.545401]);
 
     XCTAssertTrue([saver saveCurrencies:self.currencies1 andRates:self.rates1 error:&error]);
     XCTAssertNil(error);
@@ -148,6 +151,9 @@
     XCTAssertTrue([[self getRateWithCode:@"AED"].name isEqualToString:@"United Arab Emirates Dirham"]);
     XCTAssertTrue([[self getRateWithCode:@"AFN"].name isEqualToString:@"Afghan Afghani"]);
     XCTAssertTrue([[self getRateWithCode:@"ALL"].name isEqualToString:@"Albanian Lek"]);
+    XCTAssertTrue([[self getRateWithCode:@"AED"].rate isEqualToNumber:@3.67343]);
+    XCTAssertTrue([[self getRateWithCode:@"AFN"].rate isEqualToNumber:@57.411375]);
+    XCTAssertTrue([[self getRateWithCode:@"ALL"].rate isEqualToNumber:@123.545401]);
 }
 
 - (void)testAddTwiceDifferent
@@ -162,6 +168,9 @@
     XCTAssertTrue([[self getRateWithCode:@"AED"].name isEqualToString:@"United Arab Emirates Dirham"]);
     XCTAssertTrue([[self getRateWithCode:@"AFN"].name isEqualToString:@"Afghan Afghani"]);
     XCTAssertTrue([[self getRateWithCode:@"ALL"].name isEqualToString:@"Albanian Lek"]);
+    XCTAssertTrue([[self getRateWithCode:@"AED"].rate isEqualToNumber:@3.67343]);
+    XCTAssertTrue([[self getRateWithCode:@"AFN"].rate isEqualToNumber:@57.411375]);
+    XCTAssertTrue([[self getRateWithCode:@"ALL"].rate isEqualToNumber:@123.545401]);
 
     XCTAssertTrue([saver saveCurrencies:self.currencies2 andRates:self.rates2 error:&error]);
     XCTAssertNil(error);
@@ -170,6 +179,9 @@
     XCTAssertTrue([[self getRateWithCode:@"AED"].name isEqualToString:@"United Arab Emirates Dirham2"]);
     XCTAssertTrue([[self getRateWithCode:@"ALL"].name isEqualToString:@"Albanian Lek"]);
     XCTAssertTrue([[self getRateWithCode:@"AMD"].name isEqualToString:@"Armenian Dram"]);
+    XCTAssertTrue([[self getRateWithCode:@"AED"].rate isEqualToNumber:@3.67343]);
+    XCTAssertTrue([[self getRateWithCode:@"ALL"].rate isEqualToNumber:@123.545401]);
+    XCTAssertTrue([[self getRateWithCode:@"AMD"].rate isEqualToNumber:@479.14]);
 }
 
 - (void)testAddDifferentDictionary1
