@@ -11,7 +11,7 @@
 #import <TBStateMachine/TBSMStateMachine.h>
 
 
-@interface SBCurrencyRateLoader () <SBInternetReachableDelegate>
+@interface SBCurrencyRateLoader () <SBInternetStatusDelegate>
 
 @property(nonatomic, strong) TBSMState *stateStart;
 @property(nonatomic, strong) TBSMState *stateNoData;

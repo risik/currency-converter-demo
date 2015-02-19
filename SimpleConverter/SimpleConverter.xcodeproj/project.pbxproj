@@ -24,6 +24,7 @@
 		677EFA87BFEC991391D9F8F5 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF4582FCF56B70A5B083C /* NSObject+Utils.m */; };
 		677EFC28C9D88ED58B3E5298 /* SimpleConverter.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 677EFABE34B6DF0F394D582D /* SimpleConverter.xcdatamodel */; };
 		677EFC7ED3BA98E4BEFBAD3F /* SBCurrencyRateSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF4E8F66D7A141FF7C4B0 /* SBCurrencyRateSaver.m */; };
+		677EFC9501282E3CEBC08AD7 /* SBInternetStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF10A5730115633D68B95 /* SBInternetStatus.m */; };
 		677EFCA6F3B0765BE45A798C /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFE6EF13C1E321F9044F0 /* NSArray+Utils.m */; };
 		677EFD1A78CF0A444A18645A /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF9BE7F57933D77844824 /* NSString+MD5.m */; };
 		677EFF1A67E64A900001236F /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF003E810306F279879CE /* NSDictionary+Utils.m */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		150B7B1D2765C1711DA33D28 /* Pods-SimpleConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleConverter/Pods-SimpleConverter.debug.xcconfig"; sourceTree = "<group>"; };
 		677EF003E810306F279879CE /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		677EF10A5730115633D68B95 /* SBInternetStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBInternetStatus.m; sourceTree = "<group>"; };
 		677EF19FDF285BEC9B8BDC12 /* SBDataSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDataSaver.h; sourceTree = "<group>"; };
 		677EF1D7BADB812BDD757F30 /* SBCurrencyRateSaverMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCurrencyRateSaverMock.h; sourceTree = "<group>"; };
 		677EF2C15669966D2A1F0CC5 /* SBDataLoaderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDataLoaderFactory.h; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		677EF80BD0E38A6CDD560887 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
 		677EF8375E23F040EF2C4842 /* NSNumber+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Utils.h"; sourceTree = "<group>"; };
 		677EF8467B8615F4C17FAD45 /* SBDictionaryUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDictionaryUtilsTests.m; sourceTree = "<group>"; };
+		677EF88CF31FD9F0D626A463 /* SBInternetStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBInternetStatus.h; sourceTree = "<group>"; };
 		677EF94C1353FE8EA987E388 /* SBObjectUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBObjectUtilsTests.m; sourceTree = "<group>"; };
 		677EF9A658A8D3D9A083F398 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
 		677EF9BE7F57933D77844824 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				677EFBCC3B9BEBA257DED47D /* SBDataLoader.m */,
 				677EF37CB207039F6AC10DE9 /* SBDataLoaderFactory.m */,
 				677EF2C15669966D2A1F0CC5 /* SBDataLoaderFactory.h */,
+				677EF10A5730115633D68B95 /* SBInternetStatus.m */,
+				677EF88CF31FD9F0D626A463 /* SBInternetStatus.h */,
 			);
 			path = DataLoader;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				677EF0A9775DBB9EBDAC35CA /* SBCurrencyRateLoader.m in Sources */,
 				677EF2689A56E6318C0D050F /* SBDataLoader.m in Sources */,
 				677EF260C567CBEB364BB68C /* SBDataLoaderFactory.m in Sources */,
+				677EFC9501282E3CEBC08AD7 /* SBInternetStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

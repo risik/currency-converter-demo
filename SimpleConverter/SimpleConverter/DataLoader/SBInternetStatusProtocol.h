@@ -5,17 +5,17 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol SBInternetReachableDelegate;
+@protocol SBInternetStatusDelegate;
 
 @protocol SBInternetStatusProtocol <NSObject>
 
 - (BOOL)reachable;
 
-- (void)setDelegate:(id<SBInternetReachableDelegate>)newDelegate;
+- (void)setDelegate:(id<SBInternetStatusDelegate>)newDelegate;
 
 @end
 
-@protocol SBInternetReachableDelegate
+@protocol SBInternetStatusDelegate
 
 - (void)internetBecomeReachable:(id<SBInternetStatusProtocol>)internetReachable;
 
