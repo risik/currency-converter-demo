@@ -123,13 +123,6 @@
         return NO;
     }
 
-//    NSError *error = nil;
-//    if (![self.context save:&error]) {
-//        NSLog(@"An error occurred during save data: %@", error.localizedDescription);
-//        [self fillError:pError withErrorCode:SBCurrencyRateSaverParseErrorSave withUserInfo:@{@"error" : error}];
-//        return NO;
-//    }
-
     return YES;
 }
 
@@ -138,13 +131,6 @@
     if (![self applyRatesWithDictionary:dictionary error:pError]) {
         return NO;
     }
-
-//    NSError *error = nil;
-//    if (![self.context save:&error]) {
-//        NSLog(@"An error occurred during save data: %@", error.localizedDescription);
-//        [self fillError:pError withErrorCode:SBCurrencyRateSaverParseErrorSave withUserInfo:@{@"error" : error}];
-//        return NO;
-//    }
 
     return YES;
 }
