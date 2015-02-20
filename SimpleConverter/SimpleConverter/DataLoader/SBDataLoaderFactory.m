@@ -40,7 +40,13 @@
 
 - (id <SBDataLoaderProtocol>)createDataLoaderWithUrl:(NSString *)url
 {
-    NSString *fullUrl = [NSString stringWithFormat:@"%@/%@%@", self.baseUrl, url, self.suffix];
+    NSString *fullUrl = nil;
+    if (self.suffix) {
+        fullUrl = [NSString stringWithFormat:@"%@/%@%@", self.baseUrl, url, self.suffix];
+    }
+    else {
+        fullUrl = [NSString stringWithFormat:@"%@/%@", self.baseUrl, url];
+    }
     return [SBDataLoader dataLoaderWithUrl:fullUrl];
 }
 

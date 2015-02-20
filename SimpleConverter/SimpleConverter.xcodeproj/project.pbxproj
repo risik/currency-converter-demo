@@ -27,6 +27,7 @@
 		677EFC9501282E3CEBC08AD7 /* SBInternetStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF10A5730115633D68B95 /* SBInternetStatus.m */; };
 		677EFCA6F3B0765BE45A798C /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFE6EF13C1E321F9044F0 /* NSArray+Utils.m */; };
 		677EFD1A78CF0A444A18645A /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF9BE7F57933D77844824 /* NSString+MD5.m */; };
+		677EFDB8FCC4DE87244D0534 /* SBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFA22071EC69DACD9663A /* SBRouter.m */; };
 		677EFF1A67E64A900001236F /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EF003E810306F279879CE /* NSDictionary+Utils.m */; };
 		FC6DEF5E1A93BC5D00A86CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DEF5D1A93BC5D00A86CA8 /* main.m */; };
 		FC6DEF611A93BC5D00A86CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DEF601A93BC5D00A86CA8 /* AppDelegate.m */; };
@@ -36,6 +37,8 @@
 		FC7750E21A94E0CD00542A72 /* SBRate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7750E11A94E0CD00542A72 /* SBRate.m */; };
 		FC7750E41A94EED900542A72 /* SBCurrencyRateSaverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7750E31A94EED900542A72 /* SBCurrencyRateSaverTests.m */; };
 		FCFFD9271A9674AF00098A2A /* SBDataSaverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFFD9261A9674AF00098A2A /* SBDataSaverTests.m */; };
+		FCFFD92B1A96A43D00098A2A /* SBConverterMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFFD9291A96A43D00098A2A /* SBConverterMainViewController.m */; };
+		FCFFD92C1A96A43D00098A2A /* SBConverterMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFFD92A1A96A43D00098A2A /* SBConverterMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +76,10 @@
 		677EF8467B8615F4C17FAD45 /* SBDictionaryUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDictionaryUtilsTests.m; sourceTree = "<group>"; };
 		677EF88CF31FD9F0D626A463 /* SBInternetStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBInternetStatus.h; sourceTree = "<group>"; };
 		677EF94C1353FE8EA987E388 /* SBObjectUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBObjectUtilsTests.m; sourceTree = "<group>"; };
+		677EF9597E25FFC3B1391EEF /* SBRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRouter.h; sourceTree = "<group>"; };
 		677EF9A658A8D3D9A083F398 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
 		677EF9BE7F57933D77844824 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		677EFA22071EC69DACD9663A /* SBRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRouter.m; sourceTree = "<group>"; };
 		677EFA505CAA4F23FC741096 /* SBDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDataLoader.h; sourceTree = "<group>"; };
 		677EFA752EF58617A90BF6F4 /* NSManagedObjectContext+Testing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Testing.m"; sourceTree = "<group>"; };
 		677EFAB6055422174762F4C8 /* SBCurrencyRateLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCurrencyRateLoader.h; sourceTree = "<group>"; };
@@ -106,6 +111,9 @@
 		FC7750E11A94E0CD00542A72 /* SBRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRate.m; sourceTree = "<group>"; };
 		FC7750E31A94EED900542A72 /* SBCurrencyRateSaverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCurrencyRateSaverTests.m; sourceTree = "<group>"; };
 		FCFFD9261A9674AF00098A2A /* SBDataSaverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDataSaverTests.m; sourceTree = "<group>"; };
+		FCFFD9281A96A43D00098A2A /* SBConverterMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBConverterMainViewController.h; sourceTree = "<group>"; };
+		FCFFD9291A96A43D00098A2A /* SBConverterMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBConverterMainViewController.m; sourceTree = "<group>"; };
+		FCFFD92A1A96A43D00098A2A /* SBConverterMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBConverterMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,16 @@
 				F497B73A0BA78EB1D8D47F50 /* libPods-SimpleConverter.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		677EF26A59C96C87E1D9DDB8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FCFFD9281A96A43D00098A2A /* SBConverterMainViewController.h */,
+				FCFFD9291A96A43D00098A2A /* SBConverterMainViewController.m */,
+				FCFFD92A1A96A43D00098A2A /* SBConverterMainViewController.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		677EF2BF4C637EE22D14590A /* DataSave */ = {
@@ -278,6 +296,9 @@
 				677EFAE85B7FA7CF74BAA2F3 /* DataModel */,
 				677EF2BF4C637EE22D14590A /* DataSave */,
 				677EF789787EA298047AA64F /* DataLoader */,
+				677EF26A59C96C87E1D9DDB8 /* UI */,
+				677EFA22071EC69DACD9663A /* SBRouter.m */,
+				677EF9597E25FFC3B1391EEF /* SBRouter.h */,
 			);
 			path = SimpleConverter;
 			sourceTree = "<group>";
@@ -393,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC6DEF6F1A93BC5D00A86CA8 /* LaunchScreen.xib in Resources */,
+				FCFFD92C1A96A43D00098A2A /* SBConverterMainViewController.xib in Resources */,
 				FC6DEF6C1A93BC5D00A86CA8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +470,7 @@
 				FC7750E21A94E0CD00542A72 /* SBRate.m in Sources */,
 				FC6DEF5E1A93BC5D00A86CA8 /* main.m in Sources */,
 				FC6DEF671A93BC5D00A86CA8 /* ViewController.m in Sources */,
+				FCFFD92B1A96A43D00098A2A /* SBConverterMainViewController.m in Sources */,
 				677EFD1A78CF0A444A18645A /* NSString+MD5.m in Sources */,
 				677EFCA6F3B0765BE45A798C /* NSArray+Utils.m in Sources */,
 				677EF340996F44E1504EE3E8 /* NSNumber+Utils.m in Sources */,
@@ -461,6 +484,7 @@
 				677EF2689A56E6318C0D050F /* SBDataLoader.m in Sources */,
 				677EF260C567CBEB364BB68C /* SBDataLoaderFactory.m in Sources */,
 				677EFC9501282E3CEBC08AD7 /* SBInternetStatus.m in Sources */,
+				677EFDB8FCC4DE87244D0534 /* SBRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

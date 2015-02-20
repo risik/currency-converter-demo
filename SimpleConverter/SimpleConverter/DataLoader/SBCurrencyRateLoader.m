@@ -73,6 +73,12 @@
     return [[self alloc] initWithDataLoaderFactory:dataLoaderFactory saver:saver internetStatus:internetStatus];
 }
 
+- (void)retry
+{
+    [self.stateMachine scheduleEvent:self.eventRetry];
+}
+
+
 - (void)createStateMachine
 {
     self.stateStart = [TBSMState stateWithName:@"stateStart"];
@@ -91,6 +97,7 @@
     self.eventErrorParsing = [TBSMEvent eventWithName:@"eventErrorParsing"];
     self.eventBecomeReachable = [TBSMEvent eventWithName:@"eventBecomeReachable"];
     self.eventLoaded = [TBSMEvent eventWithName:@"eventLoaded"];
+    self.eventRetry = [TBSMEvent eventWithName:@"eventRetry"];
 
     __weak typeof(self) weakSelf = self;
 

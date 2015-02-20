@@ -24,6 +24,8 @@
                              internetStatus:(id <SBInternetStatusProtocol>)internetStatus;
 
 
+- (void)retry;
+
 @end
 
 @protocol SBCurrencyRateLoaderDelegate
