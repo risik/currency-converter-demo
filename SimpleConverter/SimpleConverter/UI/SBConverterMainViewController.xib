@@ -53,7 +53,7 @@
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ib7-97-9fj">
                             <rect key="frame" x="85" y="21" width="491" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             <connections>
                                 <action selector="sourceChanged:" destination="-1" eventType="editingChanged" id="KRi-QX-F9M"/>
                             </connections>
@@ -76,14 +76,17 @@
                         <outlet property="delegate" destination="-1" id="zgI-Km-e4W"/>
                     </connections>
                 </pickerView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nae-0J-h45">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nae-0J-h45">
                     <rect key="frame" x="8" y="338" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="yUv-Mu-Hq7"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcE-8h-6yn">
-                    <rect key="frame" x="8" y="367" width="584" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcE-8h-6yn">
+                    <rect key="frame" x="281.5" y="367" width="37" height="30"/>
                     <state key="normal" title="Retry">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -94,16 +97,20 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Nae-0J-h45" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="1a7-3r-Fq4"/>
                 <constraint firstItem="DRK-8f-40C" firstAttribute="top" secondItem="UlX-fG-wT6" secondAttribute="bottom" constant="8" id="9bg-S3-KPa"/>
+                <constraint firstAttribute="trailing" secondItem="Nae-0J-h45" secondAttribute="trailing" constant="8" id="FV4-up-q3q"/>
                 <constraint firstItem="UlX-fG-wT6" firstAttribute="top" secondItem="ymA-mI-nGQ" secondAttribute="bottom" constant="8" id="GmN-cF-cS0"/>
                 <constraint firstItem="ymA-mI-nGQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Hj9-Xt-Hcg"/>
                 <constraint firstAttribute="trailing" secondItem="DRK-8f-40C" secondAttribute="trailing" id="Jy2-8h-W0q"/>
+                <constraint firstAttribute="centerX" secondItem="tcE-8h-6yn" secondAttribute="centerX" id="Mtk-04-1gg"/>
                 <constraint firstItem="tcE-8h-6yn" firstAttribute="top" secondItem="Nae-0J-h45" secondAttribute="bottom" constant="8" id="PaM-Kr-NoY"/>
                 <constraint firstAttribute="trailing" secondItem="ymA-mI-nGQ" secondAttribute="trailing" constant="8" id="coV-UZ-YLc"/>
                 <constraint firstItem="DRK-8f-40C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fGj-Cp-nFi"/>
                 <constraint firstItem="UlX-fG-wT6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="iVz-hi-nRt"/>
                 <constraint firstItem="ymA-mI-nGQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="in3-qn-BCg"/>
                 <constraint firstAttribute="trailing" secondItem="UlX-fG-wT6" secondAttribute="trailing" constant="8" id="sjw-7N-MII"/>
+                <constraint firstItem="Nae-0J-h45" firstAttribute="top" secondItem="DRK-8f-40C" secondAttribute="bottom" constant="8" id="vbL-UB-G2y"/>
             </constraints>
         </view>
     </objects>

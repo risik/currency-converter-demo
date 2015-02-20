@@ -8,7 +8,7 @@
 
 #import "SBConverterMainViewController.h"
 #import "SBRate.h"
-#import <CoreData/CoreData.h>
+#import "NSString+Utils.h"
 
 @interface SBConverterMainViewController ()
         <
@@ -34,6 +34,10 @@
 - (IBAction)retryClick:(id)sender;
 
 @property(weak, nonatomic) IBOutlet UIActivityIndicatorView *busyIndicator;
+
+@property (nonatomic, strong) SBRate *fromRate;
+
+@property (nonatomic, strong) SBRate *toRate;
 
 @end
 
@@ -95,6 +99,8 @@
 
     self.retryButton.hidden = YES;
     self.retryButton.enabled = NO;
+
+    [self updateResultWithValue:0.0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,6 +111,7 @@
 
 - (IBAction)sourceChanged:(id)sender
 {
+    [self updateResult];
 }
 
 #pragma mark picker delegate
@@ -116,10 +123,8 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    NSArray *sections = self.fetchedResultsController.sections;
-    id sectionInfo = sections[0];
-    NSUInteger numberOfObjects = [sectionInfo numberOfObjects];
-    return numberOfObjects;
+    NSArray *objects = self.fetchedResultsController.fetchedObjects;
+    return objects.count;
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
@@ -129,11 +134,23 @@
     return sbRate.name;
 }
 
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    NSArray *objects = self.fetchedResultsController.fetchedObjects;
+    if (component == 0) {
+        self.fromRate = objects[(NSUInteger) row];
+    }
+    else {
+        self.toRate = objects[(NSUInteger) row];
+    }
+    [self updateResult];
+}
+
 #pragma mark fetch controller delegate
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
-    [self.picker reloadAllComponents];
+    [self loadPicker];
 }
 
 - (void)controller:(NSFetchedResultsController *)controller
@@ -142,7 +159,7 @@
      forChangeType:(NSFetchedResultsChangeType)type
       newIndexPath:(NSIndexPath *)newIndexPath
 {
-    [self.picker reloadAllComponents];
+    [self loadPicker];
 }
 
 - (IBAction)retryClick:(id)sender
@@ -167,6 +184,43 @@
 {
     self.retryButton.hidden = NO;
     self.retryButton.enabled = YES;
+}
+
+#pragma mark internal
+
+- (void)updateResult
+{
+    if ([NSString isEmpty:self.sourceField.text]) {
+        [self updateResultWithValue:0.0];
+    }
+    NSScanner *scanner = [NSScanner scannerWithString:self.sourceField.text];
+
+    double sourceValue;
+    if (![scanner scanDouble:&sourceValue]) {
+        [self updateResultWithValue:0.0];
+        return;
+    }
+
+    double sourceInUsd = sourceValue / self.fromRate.rate.doubleValue;
+    double resultValue = sourceInUsd * self.toRate.rate.doubleValue;
+
+    [self updateResultWithValue:resultValue];
+}
+
+- (void)updateResultWithValue:(double)doubleValue
+{
+    NSString *valueString = [NSString stringWithFormat:@"%0.2f", doubleValue];
+    self.resultLabel.text = valueString;
+}
+
+- (void)loadPicker
+{
+    [self.picker reloadAllComponents];
+    NSArray *objects = self.fetchedResultsController.fetchedObjects;
+    if (objects.count > 0) {
+        self.fromRate = objects[0];
+        self.toRate = objects[0];
+    }
 }
 
 @end
