@@ -8,8 +8,8 @@
 
 #import "SBCurrencyRateSaver.h"
 #import "SBRate.h"
-#import "NSDictionary+Utils.h"
-#import "NSString+Utils.h"
+#import "NSDictionary+DHDUtils.h"
+#import "NSString+DHDUtils.h"
 
 @interface SBCurrencyRateSaver ()
 
@@ -93,13 +93,13 @@
                           andRates:(NSDictionary *)ratesDictionary
                              error:(NSError **)pError
 {
-    if ([NSDictionary isEmpty:currenciesDictionary]) {
+    if ([NSDictionary dhd_isEmpty:currenciesDictionary]) {
         NSLog(@"Couldn't parsing currencies: not dictionary");
         [self fillError:pError withErrorCode:SBCurrencyRateSaverParseErrorInvalidDictionary withUserInfo:nil];
         return NO;
     }
 
-    if ([NSDictionary isEmpty:ratesDictionary]) {
+    if ([NSDictionary dhd_isEmpty:ratesDictionary]) {
         NSLog(@"Couldn't parsing rates: not dictionary");
         [self fillError:pError withErrorCode:SBCurrencyRateSaverParseErrorInvalidDictionary withUserInfo:nil];
         return NO;
@@ -143,7 +143,7 @@
 - (BOOL)applyCurrencyNamesWithDictionary:(NSDictionary *)dictionary error:(NSError **)pError
 {
     for (NSString *key in dictionary) {
-        if ([NSString isEmpty:key]) {
+        if ([NSString dhd_isEmpty:key]) {
             NSLog(@"Couldn't parsing rate: invalid key: '%@'", key);
             [self fillError:pError withErrorCode:SBCurrencyRateSaverParseErrorInvalidDictionary withUserInfo:nil];
             return NO;
@@ -159,7 +159,7 @@
 - (BOOL)applyRatesWithDictionary:(NSDictionary *)dictionary error:(NSError **)pError
 {
     for (NSString *key in dictionary) {
-        if ([NSString isEmpty:key]) {
+        if ([NSString dhd_isEmpty:key]) {
             NSLog(@"Couldn't parsing rate: invalid key: '%@'", key);
             [self fillError:pError withErrorCode:SBCurrencyRateSaverParseErrorInvalidDictionary withUserInfo:nil];
             return NO;

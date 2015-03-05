@@ -5,6 +5,7 @@ target 'SimpleConverter' do
 pod 'AFNetworking', '~> 2.5'
 pod 'Reachability', '~> 3.2'
 pod 'TBStateMachine', '~> 3.0'
+pod 'dhd-objc-utils', :podspec => 'https://raw.github.com/risik/dhd-objc-utils/master/dhd-objc-utils.podspec'
 end
 
 target 'SimpleConverterTests' do

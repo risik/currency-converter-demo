@@ -8,7 +8,7 @@
 
 #import "SBConverterMainViewController.h"
 #import "SBRate.h"
-#import "NSString+Utils.h"
+#import "NSString+DHDUtils.h"
 
 @interface SBConverterMainViewController ()
         <
@@ -190,7 +190,7 @@
 
 - (void)updateResult
 {
-    if ([NSString isEmpty:self.sourceField.text]) {
+    if ([NSString dhd_isEmpty:self.sourceField.text]) {
         [self updateResultWithValue:0.0];
     }
     NSScanner *scanner = [NSScanner scannerWithString:self.sourceField.text];

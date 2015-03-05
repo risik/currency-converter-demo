@@ -5,7 +5,7 @@
 
 #import "SBDataSaver.h"
 #import "SBCurrencyRateSaverProtocol.h"
-#import "NSDictionary+Utils.h"
+#import "NSDictionary+DHDUtils.h"
 
 
 @interface SBDataSaver ()
@@ -67,7 +67,7 @@
         return NO;
     }
 
-    if ([NSDictionary isEmpty:ratesDictionary]) {
+    if ([NSDictionary dhd_isEmpty:ratesDictionary]) {
         NSLog(@"Couldn't parsing rates: not dictionary");
         [self fillError:pError withErrorCode:SBDataSaverErrorInvalidDictionary withUserInfo:nil];
         return NO;
@@ -75,7 +75,7 @@
 
     NSDictionary *internalRates = ratesDictionary[@"rates"];
 
-    if ([NSDictionary isEmpty:internalRates]) {
+    if ([NSDictionary dhd_isEmpty:internalRates]) {
         NSLog(@"Couldn't parsing rates: not dictionary");
         [self fillError:pError withErrorCode:SBDataSaverErrorInvalidDictionary withUserInfo:nil];
         return NO;
