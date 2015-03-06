@@ -20,7 +20,6 @@
 		677EFDB8FCC4DE87244D0534 /* SBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 677EFA22071EC69DACD9663A /* SBRouter.m */; };
 		FC6DEF5E1A93BC5D00A86CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DEF5D1A93BC5D00A86CA8 /* main.m */; };
 		FC6DEF611A93BC5D00A86CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DEF601A93BC5D00A86CA8 /* AppDelegate.m */; };
-		FC6DEF671A93BC5D00A86CA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6DEF661A93BC5D00A86CA8 /* ViewController.m */; };
 		FC6DEF6C1A93BC5D00A86CA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6DEF6B1A93BC5D00A86CA8 /* Images.xcassets */; };
 		FC6DEF6F1A93BC5D00A86CA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6DEF6D1A93BC5D00A86CA8 /* LaunchScreen.xib */; };
 		FC7750E21A94E0CD00542A72 /* SBRate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7750E11A94E0CD00542A72 /* SBRate.m */; };
@@ -73,8 +72,6 @@
 		FC6DEF5D1A93BC5D00A86CA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC6DEF5F1A93BC5D00A86CA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC6DEF601A93BC5D00A86CA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC6DEF651A93BC5D00A86CA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FC6DEF661A93BC5D00A86CA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FC6DEF6B1A93BC5D00A86CA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FC6DEF6E1A93BC5D00A86CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FC6DEF741A93BC5E00A86CA8 /* SimpleConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,8 +225,6 @@
 			children = (
 				FC6DEF5F1A93BC5D00A86CA8 /* AppDelegate.h */,
 				FC6DEF601A93BC5D00A86CA8 /* AppDelegate.m */,
-				FC6DEF651A93BC5D00A86CA8 /* ViewController.h */,
-				FC6DEF661A93BC5D00A86CA8 /* ViewController.m */,
 				FC6DEF6B1A93BC5D00A86CA8 /* Images.xcassets */,
 				FC6DEF6D1A93BC5D00A86CA8 /* LaunchScreen.xib */,
 				FC6DEF5B1A93BC5D00A86CA8 /* Supporting Files */,
@@ -408,7 +403,6 @@
 				FC6DEF611A93BC5D00A86CA8 /* AppDelegate.m in Sources */,
 				FC7750E21A94E0CD00542A72 /* SBRate.m in Sources */,
 				FC6DEF5E1A93BC5D00A86CA8 /* main.m in Sources */,
-				FC6DEF671A93BC5D00A86CA8 /* ViewController.m in Sources */,
 				FCFFD92B1A96A43D00098A2A /* SBConverterMainViewController.m in Sources */,
 				677EFC28C9D88ED58B3E5298 /* SimpleConverter.xcdatamodel in Sources */,
 				677EFC7ED3BA98E4BEFBAD3F /* SBCurrencyRateSaver.m in Sources */,
