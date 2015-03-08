@@ -20,12 +20,16 @@ PODS:
   - AFNetworking/UIKit (2.5.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AGAsyncTestHelper (1.0):
+    - AGAsyncTestHelper/Core (= 1.0)
+  - AGAsyncTestHelper/Core (1.0)
   - dhd-objc-utils (0.0.3)
   - Reachability (3.2)
   - TBStateMachine (3.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - AGAsyncTestHelper
   - dhd-objc-utils (from `https://raw.github.com/risik/dhd-objc-utils/master/dhd-objc-utils.podspec`)
   - Reachability (~> 3.2)
   - TBStateMachine (~> 3.0)
@@ -36,6 +40,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
+  AGAsyncTestHelper: fc9d44460933d8167ae431f466ab3a09a5121582
   dhd-objc-utils: b32603e22c0d4081a9abdf6233a27205fc06a678
   Reachability: 1ef8adf5c4e3d362f96515d4278f68dad3c26930
   TBStateMachine: 0c581067aa5a86e1f87321f2659d382d8b24d7a2

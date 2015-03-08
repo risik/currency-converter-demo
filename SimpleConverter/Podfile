@@ -9,6 +9,6 @@ pod 'dhd-objc-utils', :podspec => 'https://raw.github.com/risik/dhd-objc-utils/m
 end
 
 target 'SimpleConverterTests' do
-
+    pod 'AGAsyncTestHelper'
 end
 
