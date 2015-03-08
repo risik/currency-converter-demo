@@ -73,6 +73,7 @@
 {
     @synchronized (self) {
         self.fetchedArray = nil;
+        self.fetchedDictionary = nil;
     }
 }
 
@@ -84,6 +85,7 @@
 {
     @synchronized (self) {
         self.fetchedArray = nil;
+        self.fetchedDictionary = nil;
     }
 }
 
