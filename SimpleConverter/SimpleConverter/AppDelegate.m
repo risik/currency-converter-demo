@@ -21,6 +21,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    BOOL inTests = NSClassFromString(@"XCTest") != nil;
+    if (inTests) {
+        return YES;
+    }
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     self.router = [[SBRouter alloc] initWithManagedObjectContext:self.managedObjectContext
